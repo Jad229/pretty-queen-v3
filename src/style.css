@@ -32,3 +32,8 @@ h1 {
 h2 {
   font: var(--h2);
 }
+
+a {
+  all: unset;
+  cursor: pointer;
+}

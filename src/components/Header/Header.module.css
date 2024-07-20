@@ -1,0 +1,22 @@
+.header {
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navItem {
+}
+
+.logoContainer {
+}
+
+.logo {
+}
