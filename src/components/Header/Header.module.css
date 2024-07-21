@@ -24,9 +24,12 @@
 }
 
 .logoContainer {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
+  scale: 0.7;
 }
 
 .buttons {
