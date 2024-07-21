@@ -6,26 +6,26 @@ function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <div className={styles.logoContainer}>
+        <div className={`${styles.navItem} ${styles.logoContainer}`}>
           <img className={styles.logo} src={Logo} alt="pretty queen logo" />
         </div>
-        <ul className={styles.navList}>
+        <ul className={`${styles.navItem} ${styles.navList}`}>
           {/* Change anchor tags to Link tags later */}
-          <li className={styles.navItem}>
+          <li className={styles.navLink}>
             <a href="/">Home</a>
           </li>
-          <li className={styles.navItem}>
+          <li className={styles.navLink}>
             <a href="/products">Products</a>
           </li>
-          <li className={styles.navItem}>
+          <li className={styles.navLink}>
             <a href="/services">Services</a>
           </li>
-          <li className={styles.navItem}>
+          <li className={styles.navLink}>
             <a href="/about">About Us</a>
           </li>
         </ul>
 
-        <div className={styles.buttons}>
+        <div className={`${styles.navItem} ${styles.buttons}`}>
           <BsBag size={25} />
           <button className={styles.button}>Book Now</button>
         </div>

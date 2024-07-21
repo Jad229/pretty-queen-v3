@@ -11,6 +11,7 @@
   --tertiary: #fff;
   --bg-dark: #171717;
   --fg-light: #fff;
+  --test-bg: rgb(184, 233, 181);
 }
 
 * {
