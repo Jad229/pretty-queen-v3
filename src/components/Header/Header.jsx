@@ -3,8 +3,12 @@ import Logo from "../../assets/Logo.svg";
 import { BsBagDash } from "react-icons/bs";
 import MobileNavigation from "../MobileNavigation/MobileNavigation";
 import { CiMenuBurger } from "react-icons/ci";
+import { useState } from "react";
+import { MdClose } from "react-icons/md";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -33,10 +37,25 @@ function Header() {
         </div>
 
         <div className={`${styles.navItem} ${styles.mobileNavContainer}`}>
-          <CiMenuBurger className={styles.mobileNav} size={25} />
+          {isMenuOpen ? (
+            <MdClose
+              size={30}
+              onClick={() => {
+                setIsMenuOpen((prevState) => !prevState);
+              }}
+            />
+          ) : (
+            <CiMenuBurger
+              onClick={() => {
+                setIsMenuOpen((prevState) => !prevState);
+              }}
+              className={styles.hamburger}
+              size={25}
+            />
+          )}
         </div>
 
-        <MobileNavigation />
+        {isMenuOpen && <MobileNavigation />}
       </nav>
     </header>
   );
