@@ -1,6 +1,8 @@
 import styles from "./Header.module.css";
 import Logo from "../../assets/Logo.svg";
-import { BsBag } from "react-icons/bs";
+import { BsBagDash } from "react-icons/bs";
+import MobileNavigation from "../MobileNavigation/MobileNavigation";
+import { CiMenuBurger } from "react-icons/ci";
 
 function Header() {
   return (
@@ -26,9 +28,15 @@ function Header() {
         </ul>
 
         <div className={`${styles.navItem} ${styles.buttons}`}>
-          <BsBag size={25} />
+          <BsBagDash size={25} />
           <button className={styles.button}>Book Now</button>
         </div>
+
+        <div className={`${styles.navItem} ${styles.mobileNavContainer}`}>
+          <CiMenuBurger className={styles.mobileNav} size={25} />
+        </div>
+
+        <MobileNavigation />
       </nav>
     </header>
   );
