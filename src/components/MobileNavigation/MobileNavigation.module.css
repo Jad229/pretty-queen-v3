@@ -1,5 +1,11 @@
-.mobileNavContainer {
-  background-color: var(--test-bg);
+.mobileMenuContainer {
+  background: rgb(23, 23, 23);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 223, 0, 1) 0%,
+
+    rgba(23, 23, 23, 1) 100%
+  );
   position: absolute;
   left: 0;
   top: 75px;
@@ -7,4 +13,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.menuItem {
+  font-weight: bold;
+  text-align: center;
+  width: 75%;
 }
