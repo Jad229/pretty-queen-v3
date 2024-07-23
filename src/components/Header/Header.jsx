@@ -13,7 +13,9 @@ function Header() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <div className={`${styles.navItem} ${styles.logoContainer}`}>
-          <img className={styles.logo} src={Logo} alt="pretty queen logo" />
+          <a href="/">
+            <img className={styles.logo} src={Logo} alt="pretty queen logo" />
+          </a>
         </div>
         <ul className={`${styles.navItem} ${styles.navList}`}>
           {/* Change anchor tags to Link tags later */}
