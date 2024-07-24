@@ -57,7 +57,7 @@ function Header() {
           )}
         </div>
 
-        {isMenuOpen && <MobileNavigation />}
+        <MobileNavigation isOpen={isMenuOpen} />
       </nav>
     </header>
   );
