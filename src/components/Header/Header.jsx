@@ -5,6 +5,7 @@ import MobileNavigation from "../MobileNavigation/MobileNavigation";
 import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
+import Button from "../ui/Button/Button";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ function Header() {
 
         <div className={`${styles.navItem} ${styles.buttons}`}>
           <BsBagDash size={25} />
-          <button className={styles.button}>Book Now</button>
+          <Button>Book Now</Button>
         </div>
 
         <div className={`${styles.navItem} ${styles.mobileNavContainer}`}>
