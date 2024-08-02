@@ -6,9 +6,9 @@
   --h2: bold 3rem/1.2em var(--ff);
 
   /* colors */
-  --primary: #ffdf00;
-  --secondary: #6000ff;
-  --tertiary: #fff;
+  --color-primary: #ffe16b;
+  --color-secondary: #fedbca;
+  --color-white: #fff;
   --bg-dark: #171717;
   --fg-light: #fff;
   --test-bg: rgb(184, 233, 181);
