@@ -42,14 +42,14 @@
   right: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .heroImage {
   max-width: 850px;
   max-height: 530px;
   filter: drop-shadow(0 0 15px var(--bg-dark));
-  grid-row: 2 / 6;
+  grid-row: 2 / 4;
   grid-column: 1 / 6;
 }
 
