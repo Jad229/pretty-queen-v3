@@ -15,15 +15,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 50vw;
   height: 100%;
   z-index: -1;
   background-color: var(--color-primary);
+  animation: section-bg 1s ease-in-out forwards;
 }
 
 .heroImage {
   width: 400px;
   stroke: rgba(0, 0, 0, 0.2);
+  opacity: 0%;
+  animation: fade-in 1s ease-in-out 1s forwards;
 }
 
 .textContainer {
@@ -57,10 +60,16 @@ body {
 
 .textLeft {
   color: var(--color-text-on-primary);
+  transform: translateX(100%);
+  animation: fade-in-left 1.5s ease-in-out 2s forwards;
+  opacity: 0;
 }
 
 .textRight {
   color: var(--color-primary);
+  transform: translateX(-100%);
+  animation: fade-in-left 1.5s ease-in-out 2s forwards;
+  opacity: 0;
 }
 
 .textLeft,
@@ -76,4 +85,37 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0%;
+  animation: fade-in 1s ease-in-out 3s forwards;
+}
+
+/* ANIMATIONS */
+
+@keyframes section-bg {
+  0% {
+    width: 0vw;
+  }
+
+  100% {
+    width: 50vw;
+  }
+}
+
+@keyframes fade-in-left {
+  100% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+@keyframes fade-in-right {
+  100% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 100%;
+  }
 }
