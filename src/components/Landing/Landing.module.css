@@ -88,6 +88,7 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   opacity: 0%;
   animation: fade-in 1s ease-in-out 3s forwards;
+  cursor: pointer;
 }
 
 /* ANIMATIONS */
