@@ -23,7 +23,7 @@ body {
 }
 
 .heroImage {
-  width: 400px;
+  width: 50%;
   stroke: rgba(0, 0, 0, 0.2);
   opacity: 0%;
   animation: fade-in 1s ease-in-out 1s forwards;
@@ -68,7 +68,7 @@ body {
 .textRight {
   color: var(--color-primary);
   transform: translateX(-100%);
-  animation: fade-in-left 1.5s ease-in-out 2s forwards;
+  animation: fade-in-right 1.5s ease-in-out 2s forwards;
   opacity: 0;
   z-index: -1;
 }
@@ -76,6 +76,7 @@ body {
 .textLeft,
 .textRight {
   font-family: var(--ff-secondary);
+  font-size: 5rem;
 }
 
 .btn {
@@ -89,6 +90,23 @@ body {
   opacity: 0%;
   animation: fade-in 1s ease-in-out 3s forwards;
   cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 480px) {
+  .container {
+    gap: 100px;
+  }
+
+  .textContainer {
+    flex-direction: column;
+  }
+
+  .textContainer::before,
+  .textContainer::after {
+    font-size: 500px;
+  }
 }
 
 /* ANIMATIONS */
