@@ -1,16 +1,22 @@
 :root {
   /* Typography */
   font-size: 16px;
-  --ff: "Montserrat", sans-serif;
-  --h1: bold 4rem/1em var(--ff);
-  --h2: bold 3rem/1.2em var(--ff);
+  --ff: "Syne", sans-serif;
+  --ff-secondary: "Great Vibes", sans-serif;
+  --h1: bold 10rem/1em var(--ff);
+  --h2: bold 7rem/1.2em var(--ff);
+  --p: normal 2rem/1.2em var(--ff);
 
   /* colors */
-  --primary: #ffdf00;
-  --secondary: #6000ff;
-  --tertiary: #fff;
+  --color-primary: #ffe16b;
+  --color-secondary: #fedbca;
+  --color-white: #fff;
+  --color-text-on-primary: #000;
+  --soft-text: #605e5e;
   --bg-dark: #171717;
   --fg-light: #fff;
+
+  /* variable to use for testing styles */
   --test-bg: rgb(184, 233, 181);
 }
 
@@ -37,4 +43,8 @@ h2 {
 a {
   all: unset;
   cursor: pointer;
+}
+
+img {
+  width: 100%;
 }

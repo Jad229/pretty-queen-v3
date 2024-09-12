@@ -1,0 +1,180 @@
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--color-primary);
+  animation: section-bg 1s ease-in-out forwards;
+}
+
+.heroImage {
+  width: 50%;
+  stroke: rgba(0, 0, 0, 0.2);
+  opacity: 0%;
+  animation: fade-in 1s ease-in-out 1s forwards;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+/* Background circles  */
+
+.textContainer::before {
+  content: "O";
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1000px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 50%;
+}
+
+.textContainer::after {
+  content: "O";
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 1000px;
+  transform: translate(50%, 50%);
+  z-index: -1;
+  opacity: 50%;
+}
+
+.textLeft {
+  color: var(--color-text-on-primary);
+  transform: translateX(100%);
+  animation: slide-fade-in 1.5s ease-in-out 2s forwards;
+  opacity: 0;
+}
+
+.textRight {
+  color: var(--color-primary);
+  transform: translateX(-100%);
+  animation: slide-fade-in 1.5s ease-in-out 2s forwards;
+  opacity: 0;
+  z-index: -1;
+}
+
+.textLeft,
+.textRight {
+  font-family: var(--ff-secondary);
+  font-size: 5rem;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: var(--color-white);
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0%;
+  animation: fade-in 1s ease-in-out 3s forwards;
+  cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  .container {
+    gap: 100px;
+  }
+
+  .container::before {
+    background-color: var(--bg-dark);
+  }
+
+  .textContainer {
+    flex-direction: column;
+  }
+
+  .textLeft {
+    color: var(--color-primary);
+  }
+  .textContainer::before,
+  .textContainer::after {
+    font-size: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroImage {
+    width: 30%;
+  }
+
+  .textLeft,
+  .textRight {
+    font-size: 7rem;
+  }
+
+  /* Background circles  */
+  .textContainer::before,
+  .textContainer::after {
+    font-size: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroImage {
+    width: 50%;
+  }
+
+  .textLeft,
+  .textRight {
+    font-size: 10rem;
+  }
+  /* Background circles  */
+  .textContainer::before,
+  .textContainer::after {
+    font-size: 500px;
+  }
+}
+
+/* ANIMATIONS */
+
+@keyframes section-bg {
+  0% {
+    width: 0vw;
+  }
+
+  100% {
+    width: 50vw;
+  }
+}
+
+@keyframes slide-fade-in {
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 100%;
+  }
+}
