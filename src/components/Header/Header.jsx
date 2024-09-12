@@ -13,51 +13,31 @@ function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <div className={`${styles.navItem} ${styles.logoContainer}`}>
-          <a href="/">
-            <img className={styles.logo} src={Logo} alt="pretty queen logo" />
-          </a>
-        </div>
-        <ul className={`${styles.navItem} ${styles.navList}`}>
-          {/* Change anchor tags to Link tags later */}
-          <li className={styles.navLink}>
-            <a href="/">Home</a>
+        <ul className={styles.navLeft}>
+          <li className={styles.navItem}>
+            <a href="">Home</a>
           </li>
-          <li className={styles.navLink}>
-            <a href="/products">Products</a>
+          <li className={styles.navItem}>
+            <a href="">Hair</a>
           </li>
-          <li className={styles.navLink}>
-            <a href="/services">Services</a>
+          <li className={styles.navItem}>
+            <a href="">Products</a>
           </li>
-          <li className={styles.navLink}>
-            <a href="/about">About Us</a>
+          <li className={styles.navItem}>
+            <a href="">Services</a>
           </li>
         </ul>
-
-        <div className={`${styles.navItem} ${styles.buttons}`}>
-          <BsBagDash size={25} />
-          <Button>Book Now</Button>
-        </div>
-
-        <div className={`${styles.navItem} ${styles.mobileNavContainer}`}>
-          {isMenuOpen ? (
-            <MdClose
-              size={30}
-              onClick={() => {
-                setIsMenuOpen((prevState) => !prevState);
-              }}
-            />
-          ) : (
-            <CiMenuBurger
-              onClick={() => {
-                setIsMenuOpen((prevState) => !prevState);
-              }}
-              className={styles.hamburger}
-              size={25}
-            />
-          )}
-        </div>
-
+        <ul className={styles.navRight}>
+          <li className={styles.navItem}>
+            <a href="">About</a>
+          </li>
+          <li className={styles.navItem}>
+            <a href="">Cart</a>
+          </li>
+          <li className={styles.navItem}>
+            <a href="">Book Appointment</a>
+          </li>
+        </ul>
         <MobileNavigation isOpen={isMenuOpen} />
       </nav>
     </header>
