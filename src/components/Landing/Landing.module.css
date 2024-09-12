@@ -61,14 +61,14 @@ body {
 .textLeft {
   color: var(--color-text-on-primary);
   transform: translateX(100%);
-  animation: fade-in-left 1.5s ease-in-out 2s forwards;
+  animation: slide-fade-in 1.5s ease-in-out 2s forwards;
   opacity: 0;
 }
 
 .textRight {
   color: var(--color-primary);
   transform: translateX(-100%);
-  animation: fade-in-right 1.5s ease-in-out 2s forwards;
+  animation: slide-fade-in 1.5s ease-in-out 2s forwards;
   opacity: 0;
   z-index: -1;
 }
@@ -121,13 +121,10 @@ body {
   }
 }
 
-@keyframes fade-in-left {
-  100% {
-    transform: translateX(0%);
-    opacity: 100%;
+@keyframes slide-fade-in {
+  50% {
+    opacity: 0;
   }
-}
-@keyframes fade-in-right {
   100% {
     transform: translateX(0%);
     opacity: 100%;
