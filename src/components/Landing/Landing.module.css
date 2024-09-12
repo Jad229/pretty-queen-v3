@@ -36,6 +36,8 @@ body {
   gap: 0px;
 }
 
+/* Background circles  */
+
 .textContainer::before {
   content: "O";
   position: fixed;
@@ -94,15 +96,55 @@ body {
 
 /* RESPONSIVENESS */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .container {
     gap: 100px;
+  }
+
+  .container::before {
+    background-color: var(--bg-dark);
   }
 
   .textContainer {
     flex-direction: column;
   }
 
+  .textLeft {
+    color: var(--color-primary);
+  }
+  .textContainer::before,
+  .textContainer::after {
+    font-size: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroImage {
+    width: 30%;
+  }
+
+  .textLeft,
+  .textRight {
+    font-size: 7rem;
+  }
+
+  /* Background circles  */
+  .textContainer::before,
+  .textContainer::after {
+    font-size: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroImage {
+    width: 50%;
+  }
+
+  .textLeft,
+  .textRight {
+    font-size: 10rem;
+  }
+  /* Background circles  */
   .textContainer::before,
   .textContainer::after {
     font-size: 500px;
@@ -122,7 +164,7 @@ body {
 }
 
 @keyframes slide-fade-in {
-  50% {
+  40% {
     opacity: 0;
   }
   100% {
