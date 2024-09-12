@@ -11,12 +11,7 @@
 
 .navLeft,
 .navRight {
-  list-style: none;
-  display: flex;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  display: none;
 }
 
 .navLeft {
@@ -31,20 +26,31 @@
   font-weight: bold;
   color: var(--color-primary);
 }
+
 .navItem {
   font-size: 1.2rem;
 }
 
 .mobileNavContainer {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  margin-left: auto;
   padding-right: 40px;
+  align-items: center;
 }
 
 /* Responsive Styles  */
 @media screen and (min-width: 1024px) {
   .mobileNavContainer {
     display: none;
+  }
+
+  .navLeft,
+  .navRight {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
   }
 }

@@ -38,6 +38,25 @@ function Header() {
             <a href="">Book Appointment</a>
           </li>
         </ul>
+
+        <div className={`${styles.mobileNavContainer}`}>
+          {isMenuOpen ? (
+            <MdClose
+              size={45}
+              onClick={() => {
+                setIsMenuOpen((prevState) => !prevState);
+              }}
+            />
+          ) : (
+            <CiMenuBurger
+              onClick={() => {
+                setIsMenuOpen((prevState) => !prevState);
+              }}
+              className={styles.hamburger}
+              size={40}
+            />
+          )}
+        </div>
         <MobileNavigation isOpen={isMenuOpen} />
       </nav>
     </header>
