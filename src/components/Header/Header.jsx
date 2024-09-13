@@ -42,6 +42,7 @@ function Header() {
         <div className={`${styles.mobileNavContainer}`}>
           {isMenuOpen ? (
             <MdClose
+              className={styles.close}
               size={45}
               onClick={() => {
                 setIsMenuOpen((prevState) => !prevState);
