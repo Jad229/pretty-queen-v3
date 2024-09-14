@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "@/components/Header";
 import "./global.css";
 
@@ -7,14 +8,17 @@ export const metadata = {
     "Online ecommerce shop for Pretty Queen Beauty Salon & Barber Shop",
 };
 
-// eslint-disable-next-line react/prop-types
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Syne:wght@400..800&display=swap"
           rel="stylesheet"
