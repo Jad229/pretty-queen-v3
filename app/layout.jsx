@@ -7,6 +7,7 @@ export const metadata = {
     "Online ecommerce shop for Pretty Queen Beauty Salon & Barber Shop",
 };
 
+// eslint-disable-next-line react/prop-types
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
