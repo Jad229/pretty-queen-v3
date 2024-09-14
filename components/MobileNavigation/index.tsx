@@ -4,7 +4,7 @@ import { BsBagDash, BsScissors } from "react-icons/bs";
 import { BiBookHeart } from "react-icons/bi";
 import Button from "../ui/Button/Button";
 
-const MobileNavigation = ({ isOpen }: { isOpen: boolean }) => {
+const MobileNavigation = ({ isOpen }: { isOpen: Boolean }) => {
   return (
     <div className={`${styles.mobileNavMenu} ${isOpen ? styles.open : ""}`}>
       <ul className={styles.mobileNavList}>
