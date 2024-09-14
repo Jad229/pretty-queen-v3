@@ -1,5 +1,5 @@
 import styles from "./style.module.css";
-import Hero from "../public/assets/hero.svg";
+import Hero from "@/public/images/hero.svg";
 
 export default function Page() {
   return (
