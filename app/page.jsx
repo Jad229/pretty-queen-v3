@@ -1,7 +1,7 @@
-import Hero from "../../assets/hero.svg";
-import styles from "./Landing.module.css";
+import styles from "./style.module.css";
+import Hero from "../public/assets/hero.svg";
 
-export default function Landing() {
+export default function Page() {
   return (
     <section className={styles.container}>
       <div className={styles.textContainer}>

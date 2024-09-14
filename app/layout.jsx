@@ -1,3 +1,6 @@
+import Header from "@/components/Header";
+import "./global.css";
+
 export const metadata = {
   title: "Pretty Queen Beauty Salon & Barber Shop",
   description:
@@ -17,6 +20,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <Header />
         <div id="root">{children}</div>
       </body>
     </html>

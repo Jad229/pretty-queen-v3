@@ -1,11 +1,10 @@
+"use client";
+
 import styles from "./Header.module.css";
-import Logo from "../../assets/Logo.svg";
-import { BsBagDash } from "react-icons/bs";
-import MobileNavigation from "../MobileNavigation/MobileNavigation";
+import MobileNavigation from "../MobileNavigation";
 import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
-import Button from "../ui/Button/Button";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
