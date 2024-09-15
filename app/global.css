@@ -63,12 +63,12 @@ img {
 }
 
 /* RESPONSIVE */
-
 @media (max-width: 768px) {
   body::before {
     background-color: var(--bg-dark);
   }
 }
+
 /* ANIMATIONS */
 @keyframes section-bg {
   0% {

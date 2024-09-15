@@ -25,3 +25,18 @@
 .textRight {
   color: var(--color-primary);
 }
+
+.filterBar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterLeft,
+.filterRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
