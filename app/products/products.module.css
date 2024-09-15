@@ -1,0 +1,27 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+
+.textLeft,
+.textRight {
+  font-family: var(--ff-secondary);
+  font-size: 5rem;
+}
+
+.textLeft {
+  color: var(--color-text-on-primary);
+}
+
+.textRight {
+  color: var(--color-primary);
+}

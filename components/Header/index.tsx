@@ -15,13 +15,13 @@ function Header() {
       <nav className={styles.nav}>
         <ul className={styles.navLeft}>
           <li className={styles.navItem}>
-            <Link href="">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li className={styles.navItem}>
             <Link href="">Hair</Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="">Products</Link>
+            <Link href="/products">Products</Link>
           </li>
           <li className={styles.navItem}>
             <Link href="">Services</Link>
