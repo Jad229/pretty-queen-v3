@@ -5,6 +5,7 @@ import MobileNavigation from "../MobileNavigation";
 import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
+import Link from "next/link";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,27 +15,27 @@ function Header() {
       <nav className={styles.nav}>
         <ul className={styles.navLeft}>
           <li className={styles.navItem}>
-            <a href="">Home</a>
+            <Link href="">Home</Link>
           </li>
           <li className={styles.navItem}>
-            <a href="">Hair</a>
+            <Link href="">Hair</Link>
           </li>
           <li className={styles.navItem}>
-            <a href="">Products</a>
+            <Link href="">Products</Link>
           </li>
           <li className={styles.navItem}>
-            <a href="">Services</a>
+            <Link href="">Services</Link>
           </li>
         </ul>
         <ul className={styles.navRight}>
           <li className={styles.navItem}>
-            <a href="">About</a>
+            <Link href="">About</Link>
           </li>
           <li className={styles.navItem}>
-            <a href="">Cart</a>
+            <Link href="">Cart</Link>
           </li>
           <li className={styles.navItem}>
-            <a href="">Book Appointment</a>
+            <Link href="">Book Appointment</Link>
           </li>
         </ul>
 

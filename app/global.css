@@ -33,6 +33,18 @@ body {
   overflow: hidden;
 }
 
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--color-primary);
+  animation: section-bg 1s ease-in-out forwards;
+}
+
 h1 {
   font: var(--h1);
 }
@@ -48,4 +60,22 @@ a {
 
 img {
   width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  body::before {
+    background-color: var(--bg-dark);
+  }
+}
+/* ANIMATIONS */
+@keyframes section-bg {
+  0% {
+    width: 0vw;
+  }
+
+  100% {
+    width: 50vw;
+  }
 }

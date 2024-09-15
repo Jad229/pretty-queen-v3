@@ -7,18 +7,6 @@
   height: 100vh;
 }
 
-.container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50vw;
-  height: 100%;
-  z-index: -1;
-  background-color: var(--color-primary);
-  animation: section-bg 1s ease-in-out forwards;
-}
-
 .heroImage {
   width: 50%;
   stroke: rgba(0, 0, 0, 0.2);
@@ -98,10 +86,6 @@
     gap: 100px;
   }
 
-  .container::before {
-    background-color: var(--bg-dark);
-  }
-
   .textContainer {
     flex-direction: column;
   }
@@ -149,16 +133,6 @@
 }
 
 /* ANIMATIONS */
-
-@keyframes section-bg {
-  0% {
-    width: 0vw;
-  }
-
-  100% {
-    width: 50vw;
-  }
-}
 
 @keyframes slide-fade-in {
   40% {
