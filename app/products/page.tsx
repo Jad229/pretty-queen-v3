@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Hero from "@/public/images/hero.svg";
 import styles from "./products.module.css";
+import ProductCard from "./ProductCard";
 export default function ProductPage() {
   return (
     <section className={styles.section}>
@@ -28,12 +29,7 @@ export default function ProductPage() {
         </ul>
       </div>
       <div className={styles.productsContainer}>
-        <div className={styles.productCard}>
-          <div>PRODUCT IMAGE </div>
-          <h3>Product Title</h3>
-          <p>Product Cost</p>
-          <button>BUY PRODUCT</button>
-        </div>
+        <ProductCard />
       </div>
     </section>
   );

@@ -30,7 +30,6 @@ body {
   font-family: var(--ff);
   background-color: var(--bg-dark);
   color: var(--fg-light);
-  overflow: hidden;
 }
 
 body::before {
