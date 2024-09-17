@@ -9,9 +9,10 @@
 
   /* colors */
   --color-primary: #ffe16b;
-  --color-secondary: #fedbca;
+  --color-secondary: #9370d8;
   --color-white: #fff;
   --color-text-on-primary: #000;
+  --light-text: #d9d9d9;
   --soft-text: #605e5e;
   --bg-dark: #171717;
   --fg-light: #fff;

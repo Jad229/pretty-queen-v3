@@ -7,16 +7,16 @@ export default function ProductCard() {
   return (
     <div className={styles.productCard}>
       <div className={styles.topCard}>
-        {/* <Image
+        <Image
           src={ShampooImage.src}
           width={3456}
           height={5184}
           alt="product image"
           className={styles.productImage}
-        /> */}
+        />
         <span className={styles.price}>$45</span>
       </div>
-      {/* <div className={styles.bottomCard}>
+      <div className={styles.bottomCard}>
         <div className={styles.productName}>
           <h6 className={styles.brand}>Product Brand</h6>
           <h3 className={styles.title}>Product Title</h3>
@@ -26,7 +26,7 @@ export default function ProductCard() {
           culpa minima.
         </p>
         <button className={styles.btn}>Add to Cart</button>
-      </div> */}
+      </div>
     </div>
   );
 }
