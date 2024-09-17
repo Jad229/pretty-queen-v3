@@ -30,6 +30,16 @@ export default function ProductPage() {
       </div>
       <div className={styles.productsContainer}>
         <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </div>
     </section>
   );

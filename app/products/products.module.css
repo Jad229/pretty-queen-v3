@@ -42,4 +42,11 @@
 }
 
 .productsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 100px;
+  padding-top: 20px;
+  gap: 50px;
 }
