@@ -53,6 +53,10 @@ body::before {
   animation: section-bg 1s ease-in-out forwards;
 }
 
+#root {
+  min-height: 100vh;
+}
+
 h1 {
   font: var(--h1);
 }
@@ -68,11 +72,6 @@ a {
 
 img {
   width: 100%;
-}
-
-#root {
-  width: 100%;
-  height: 100%;
 }
 
 /* RESPONSIVE */
