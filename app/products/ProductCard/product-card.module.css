@@ -1,25 +1,24 @@
 .productCard {
   display: flex;
   flex-direction: column;
-  width: 270px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   color: var(--color-text-on-primary);
-  box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
+  background-color: var(--color-grey1);
 }
 
 .productCard .topCard {
-  background-color: var(--color-secondary);
-  height: 45%;
+  background-color: lightblue;
+  height: 60%;
   position: relative;
-  border-radius: 15px 15px 0 0;
 }
 
 .topCard .productImage {
   position: absolute;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 220px;
+  width: 90%;
   height: auto;
 }
 
@@ -32,21 +31,16 @@
 }
 
 .productCard .bottomCard {
-  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 55%;
-  text-align: center;
-  padding: 10px;
-  border-radius: 0 0 15px 15px;
+  height: 40%;
+  padding-inline: 25px;
 }
 
 .productName {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 .brand {
@@ -65,11 +59,10 @@
 }
 
 .btn {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   border: none;
-  border-radius: 10px;
   width: 200px;
-  height: 100px;
+  height: 50px;
   margin-top: 1rem;
   font-weight: bold;
   font-size: 1rem;

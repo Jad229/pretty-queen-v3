@@ -17,6 +17,16 @@
   --bg-dark: #171717;
   --fg-light: #fff;
 
+  /* grey */
+  --color-grey1: #f9f9f9;
+  --color-grey2: #eee;
+  --color-grey3: #ccc;
+  --color-grey4: #999;
+  --color-grey5: #666;
+  --color-grey6: #444;
+  --color-grey7: #222;
+  --color-grey8: #333;
+
   /* variable to use for testing styles */
   --test-bg: rgb(184, 233, 181);
 }

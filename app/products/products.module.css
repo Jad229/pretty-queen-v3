@@ -3,8 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-inline: auto;
+  width: 100%;
 }
-
+/* 
 .textContainer {
   display: flex;
   align-items: center;
@@ -24,29 +26,4 @@
 
 .textRight {
   color: var(--color-primary);
-}
-
-.filterBar {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.filterLeft,
-.filterRight {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  list-style: none;
-}
-
-.productsContainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 100px;
-  padding-top: 20px;
-  gap: 50px;
-}
+} */
