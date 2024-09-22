@@ -6,24 +6,20 @@
   margin-inline: auto;
   width: 100%;
 }
-/* 
-.textContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 600px;
+
+.headingContainer {
+  width: 100%;
+  background-color: var(--bg-dark);
 }
 
-.textLeft,
-.textRight {
-  font-family: var(--ff-secondary);
-  font-size: 5rem;
-}
-
-.textLeft {
-  color: var(--color-text-on-primary);
-}
-
-.textRight {
+.heading {
+  font-size: 4rem;
   color: var(--color-primary);
-} */
+  padding-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    color: var(--color-primary);
+  }
+}

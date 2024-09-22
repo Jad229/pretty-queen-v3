@@ -8,7 +8,7 @@
   --p: normal 2rem/1.2em var(--ff);
 
   /* colors */
-  --color-primary: #ffe16b;
+  --color-primary: #f6e392;
   --color-secondary: #9370d8;
   --color-white: #fff;
   --color-text-on-primary: #000;
@@ -24,8 +24,8 @@
   --color-grey4: #999;
   --color-grey5: #666;
   --color-grey6: #444;
-  --color-grey7: #222;
-  --color-grey8: #333;
+  --color-grey7: #333;
+  --color-grey8: #222;
 
   /* variable to use for testing styles */
   --test-bg: rgb(184, 233, 181);

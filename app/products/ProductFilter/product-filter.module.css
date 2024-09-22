@@ -2,8 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--bg-dark);
   height: 100px;
+  background-color: var(--bg-dark);
 }
 
 .filterLeft,

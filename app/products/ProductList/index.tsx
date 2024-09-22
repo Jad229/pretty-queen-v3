@@ -6,6 +6,11 @@ export default function ProductList() {
   return (
     <div className={styles.productsContainer}>
       <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
     </div>
   );
 }
