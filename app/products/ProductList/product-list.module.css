@@ -7,10 +7,10 @@
   justify-items: center;
   justify-content: center;
   width: 100%;
-  padding-block: 100px;
+  padding-block: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .productsContainer {
     grid-template-columns: 400px 400px;
   }

@@ -4,19 +4,19 @@ export default function ProductFilter() {
   return (
     <div className={styles.filterBar}>
       <ul className={styles.filterLeft}>
-        <li>
-          <button>All Products</button>
+        <li className={styles.filterTab}>
+          <button className={styles.btn}>All Products</button>
         </li>
-        <li>
-          <button>Hair</button>
+        <li className={styles.filterTab}>
+          <button className={styles.btn}>Hair</button>
         </li>
-        <li>
-          <button>Shampoo</button>
+        <li className={styles.filterTab}>
+          <button className={styles.btn}>Shampoo</button>
         </li>
       </ul>
       <ul className={styles.filterRight}>
-        <li>
-          <button>Filters</button>
+        <li className={styles.filterTab}>
+          <button className={styles.btn}>Filters</button>
         </li>
       </ul>
     </div>
