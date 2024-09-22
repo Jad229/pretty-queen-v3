@@ -10,6 +10,7 @@
 .headingContainer {
   width: 100%;
   background-color: var(--bg-dark);
+  padding: 50px;
 }
 
 .heading {
