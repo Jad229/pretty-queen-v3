@@ -10,17 +10,27 @@
 .headingContainer {
   width: 100%;
   background-color: var(--bg-dark);
-  padding: 50px;
+  padding: 25px;
 }
 
 .heading {
   font-size: 4rem;
   color: var(--color-primary);
-  padding-left: 10%;
 }
 
 @media (max-width: 768px) {
   .heading {
     color: var(--color-primary);
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    padding-left: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .heading {
+    padding-left: 16%;
   }
 }
