@@ -10,7 +10,7 @@
   padding-block: 100px;
 }
 
-@media (max-width: 12px) {
+@media (max-width: 1024px) {
   .productsContainer {
     grid-template-columns: 400px 400px;
   }
