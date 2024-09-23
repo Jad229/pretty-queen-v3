@@ -1,7 +1,7 @@
 .productsContainer {
   background-color: var(--bg-dark);
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 360px);
   grid-column-gap: 3px;
   grid-row-gap: 3px;
   justify-items: center;
@@ -12,12 +12,12 @@
 
 @media (max-width: 1200px) {
   .productsContainer {
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 360px 360px;
   }
 }
 
 @media (max-width: 768px) {
   .productsContainer {
-    grid-template-columns: 400px;
+    grid-template-columns: 360px;
   }
 }
