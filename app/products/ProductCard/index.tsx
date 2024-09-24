@@ -3,28 +3,36 @@ import HairImage from "@/public/images/weave.png";
 import styles from "./product-card.module.css";
 import Image from "next/image";
 
-export default function ProductCard() {
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  category: string;
+  description: string;
+};
+
+console.log(ShampooImage);
+
+export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className={styles.productCard}>
       <div className={styles.topCard}>
         <Image
-          src={ShampooImage.src}
+          src={`${product.image}`}
           width={3456}
           height={5184}
           alt="product image"
           className={styles.productImage}
         />
-        <span className={styles.price}>$45</span>
+        <span className={styles.price}>{product.price}</span>
       </div>
       <div className={styles.bottomCard}>
         <div className={styles.productName}>
           <h6 className={styles.brand}>Product Brand</h6>
-          <h3 className={styles.title}>Product Title</h3>
+          <h3 className={styles.title}>{product.name}</h3>
         </div>
-        <p className={styles.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-          culpa minima.
-        </p>
+        <p className={styles.desc}>{product.description}</p>
         <button className={styles.btn}>Add to Cart</button>
       </div>
     </div>
