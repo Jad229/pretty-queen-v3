@@ -1,5 +1,5 @@
 # Pretty Queen
-This is a web app for Pretty Queen Beauty Salon & Barber Shop for the viewing, purchasing, and selling of pretty queen products. As well as selling of services and appointment booking.
+This is a web app for Pretty Queen Beauty Salon & Barber Shop for the viewing, purchasing, and selling of pretty queen products. As well as the selling of services and appointment booking.
 ## Web App Development
 
 ```
