@@ -33,7 +33,6 @@ export default function ProductCard({ product }: { product: Product }) {
           <h3 className={styles.title}>{product.name}</h3>
         </div>
         <p className={styles.desc}>{product.description}</p>
-        <button className={styles.btn}>Add to Cart</button>
       </div>
     </div>
   );
