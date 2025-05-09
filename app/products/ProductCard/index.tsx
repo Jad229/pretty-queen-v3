@@ -12,8 +12,6 @@ type Product = {
   description: string;
 };
 
-console.log(ShampooImage);
-
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className={styles.productCard}>
