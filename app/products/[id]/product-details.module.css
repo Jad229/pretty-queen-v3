@@ -1,0 +1,59 @@
+.section {
+  display: flex;
+  gap: 3rem;
+  width: min(1100px, 100%);
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.image {
+  width: min(480px, 100%);
+  height: auto;
+  object-fit: cover;
+  background-color: var(--color-grey8);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.category {
+  color: var(--light-text);
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.description {
+  color: var(--soft-text);
+  max-width: 36rem;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: var(--ff);
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}

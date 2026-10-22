@@ -1,7 +1,6 @@
-import ShampooImage from "@/public/images/shampoo_bottle.png";
-import HairImage from "@/public/images/weave.png";
 import styles from "./product-card.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 type Product = {
   id: number;
@@ -23,14 +22,17 @@ export default function ProductCard({ product }: { product: Product }) {
           alt="product image"
           className={styles.productImage}
         />
-        <span className={styles.price}>{product.price}</span>
+        <span className={styles.price}>${product.price.toFixed(2)}</span>
       </div>
       <div className={styles.bottomCard}>
         <div className={styles.productName}>
-          <h6 className={styles.brand}>Product Brand</h6>
-          <h3 className={styles.title}>{product.name}</h3>
+          <h6 className={styles.brand}>{product.category}</h6>
+          <h3 className={styles.title}>
+            <Link href={`/products/${product.id}`}>{product.name}</Link>
+          </h3>
         </div>
         <p className={styles.desc}>{product.description}</p>
+        <button className={styles.btn}>Add to Cart</button>
       </div>
     </div>
   );
