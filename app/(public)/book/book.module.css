@@ -1,0 +1,139 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+
+.headingContainer {
+  width: 100%;
+  background-color: var(--bg-dark);
+  padding: 25px;
+}
+
+.heading {
+  font-size: 4rem;
+  color: var(--color-primary);
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: min(1100px, 100%);
+  margin: 2.5rem auto;
+  padding: 0 1.5rem 3rem;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 240px;
+  padding: 1.5rem;
+  background-color: var(--color-grey8);
+}
+
+.name {
+  font-size: 1.6rem;
+}
+
+.duration {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.description {
+  color: var(--light-text);
+  flex: 1;
+}
+
+.bookButton,
+.cancelButton {
+  border: none;
+  width: fit-content;
+  min-width: 140px;
+  height: 48px;
+  padding: 0 1.25rem;
+  font-family: var(--ff);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.bookButton {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.cancelButton {
+  background-color: transparent;
+  color: var(--fg-light);
+}
+
+.error {
+  margin: 2rem;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background-color: rgb(0 0 0 / 65%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: min(440px, 100%);
+  padding: 1.5rem;
+  background-color: var(--bg-dark);
+}
+
+.formTitle {
+  font-size: 1.8rem;
+}
+
+.formDuration {
+  color: var(--color-primary);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.input {
+  height: 44px;
+  padding: 0 0.75rem;
+  border: 1px solid var(--color-grey6);
+  background-color: var(--color-grey8);
+  color: var(--fg-light);
+  font-family: var(--ff);
+  font-size: 1rem;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    padding-left: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heading {
+    padding-left: 16%;
+  }
+}
